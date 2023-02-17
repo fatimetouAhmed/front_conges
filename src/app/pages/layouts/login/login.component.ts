@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit{
 
     this.authentificationService.logIn(loginObj).subscribe(loginResp => {
       if(loginResp.status) {
-        this.utilService.navigateByUrl('gestMdl');
+        this.utilService.navigateByUrl('conges');
         this.localDbService.token = "Token " + loginResp.token;
       } else {
         this.showError = true;

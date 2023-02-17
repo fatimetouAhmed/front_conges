@@ -1,5 +1,5 @@
 # Stage 1
-FROM node:16.13.0 as node
+FROM node:18-alpine as node
 WORKDIR /app
 COPY . .
 RUN npm install --force
