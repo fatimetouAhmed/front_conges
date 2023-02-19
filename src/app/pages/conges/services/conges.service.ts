@@ -7,7 +7,7 @@ export class CongesService {
   constructor(private http: HttpClient) { }
 
   getConges() {
-    return this.http.get<[]>("http://localhost:8990/conges")
+    return this.http.get<[]>("http://localhost:8990/conges/listeconge_no_confirmer")
   }
 
 

@@ -69,10 +69,12 @@ export class CongesComponent implements OnInit {
         this.conge = <Iconges>{}
       })
     } 
-    updateStat(idConges:number) {
 
+    updateStat(idConges:number) {
+      console.log(idConges);
       this.congesService.updateStatus(idConges, this.statusConge2).subscribe(() => {
         this.conge = <Iconges>{}
+      
       })
     } 
 }
